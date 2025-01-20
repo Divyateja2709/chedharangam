@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>చదరంగం</title>
+    <link rel="stylesheet" type="text/css" href="_css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="_css/styles.css">
+    <link rel="stylesheet" type="text/css" href="_css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="_css/jquery-ui.min.css">
+
+    <script type="text/javascript" rel="script" src="_js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" rel="script" src="_js/jquery-ui.min.js"></script>
+    <script type="text/javascript" rel="script" src="_js/bootstrap.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+
+        .container {
+            position: relative;
+            width: 522px;
+            height: 522px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Counter styling */
+        .counter {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #343a40;
+            color: white;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- T Level Counter -->
+    <div class="counter" id="counter">T Level: 0</div>
+
+    <h1>చదరంగం</h1>
+   
+    <div id="message-div"></div>
+    <div class="container">
+        <div id="row-8" class="row">
+            <div id="cell-white-8A" class="col-md-1 cell"><span id="p-black-castle-1" class="black-piece">&#9820</span></div>
+            <div id="cell-black-8B" class="col-md-1 cell"><span id="p-black-knight-1" class="black-piece">&#9822</span></div>
+            <div id="cell-white-8C" class="col-md-1 cell"><span id="p-black-bishop-1" class="black-piece">&#9821</span></div>
+            <div id="cell-black-8D" class="col-md-1 cell"><span id="p-black-queen" class="black-piece">&#9819</span></div>
+            <div id="cell-white-8E" class="col-md-1 cell"><span id="p-black-king" class="black-piece">&#9818</span></div>
+            <div id="cell-black-8F" class="col-md-1 cell"><span id="p-black-bishop-2" class="black-piece">&#9821</span></div>
+            <div id="cell-white-8G" class="col-md-1 cell"><span id="p-black-knight-2" class="black-piece">&#9822</span></div>
+            <div id="cell-black-8H" class="col-md-1 cell"><span id="p-black-castle-2" class="black-piece">&#9820</span></div>
+        </div>
+        <div id="row-7" class="row">
+            <div id="cell-black-7A" class="col-md-1 cell"><span id="p-black-pawn-1" class="black-piece">&#9823</span></div>
+            <div id="cell-white-7B" class="col-md-1 cell"><span id="p-black-pawn-2" class="black-piece">&#9823</span></div>
+            <div id="cell-black-7C" class="col-md-1 cell"><span id="p-black-pawn-3" class="black-piece">&#9823</span></div>
+            <div id="cell-white-7D" class="col-md-1 cell"><span id="p-black-pawn-4" class="black-piece">&#9823</span></div>
+            <div id="cell-black-7E" class="col-md-1 cell"><span id="p-black-pawn-5" class="black-piece">&#9823</span></div>
+            <div id="cell-white-7F" class="col-md-1 cell"><span id="p-black-pawn-6" class="black-piece">&#9823</span></div>
+            <div id="cell-black-7G" class="col-md-1 cell"><span id="p-black-pawn-7" class="black-piece">&#9823</span></div>
+            <div id="cell-white-7H" class="col-md-1 cell"><span id="p-black-pawn-8" class="black-piece">&#9823</span></div>
+        </div>
+        <div id="row-6" class="row">
+            <div id="cell-white-6A" class="col-md-1 cell"></div>
+            <div id="cell-black-6B" class="col-md-1 cell"></div>
+            <div id="cell-white-6C" class="col-md-1 cell"></div>
+            <div id="cell-black-6D" class="col-md-1 cell"></div>
+            <div id="cell-white-6E" class="col-md-1 cell"></div>
+            <div id="cell-black-6F" class="col-md-1 cell"></div>
+            <div id="cell-white-6G" class="col-md-1 cell"></div>
+            <div id="cell-black-6H" class="col-md-1 cell"></div>
+        </div>
+        <div id="row-5" class="row">
+            <div id="cell-black-5A" class="col-md-1 cell"></div>
+            <div id="cell-white-5B" class="col-md-1 cell"></div>
+            <div id="cell-black-5C" class="col-md-1 cell"></div>
+            <div id="cell-white-5D" class="col-md-1 cell"></div>
+            <div id="cell-black-5E" class="col-md-1 cell"></div>
+            <div id="cell-white-5F" class="col-md-1 cell"></div>
+            <div id="cell-black-5G" class="col-md-1 cell"></div>
+            <div id="cell-white-5H" class="col-md-1 cell"></div>
+        </div>
+        <div id="row-4" class="row">
+            <div id="cell-white-4A" class="col-md-1 cell"></div>
+            <div id="cell-black-4B" class="col-md-1 cell"></div>
+            <div id="cell-white-4C" class="col-md-1 cell"></div>
+            <div id="cell-black-4D" class="col-md-1 cell"></div>
+            <div id="cell-white-4E" class="col-md-1 cell"></div>
+            <div id="cell-black-4F" class="col-md-1 cell"></div>
+            <div id="cell-white-4G" class="col-md-1 cell"></div>
+            <div id="cell-black-4H" class="col-md-1 cell"></div>
+        </div>
+        <div id="row-3" class="row">
+            <div id="cell-black-3A" class="col-md-1 cell"></div>
+            <div id="cell-white-3B" class="col-md-1 cell"></div>
+            <div id="cell-black-3C" class="col-md-1 cell"></div>
+            <div id="cell-white-3D" class="col-md-1 cell"></div>
+            <div id="cell-black-3E" class="col-md-1 cell"></div>
+            <div id="cell-white-3F" class="col-md-1 cell"></div>
+            <div id="cell-black-3G" class="col-md-1 cell"></div>
+            <div id="cell-white-3H" class="col-md-1 cell"></div>
+        </div>
+        <div id="row-2" class="row">
+            <div id="cell-white-2A" class="col-md-1 cell"><span id="p-white-pawn-1" class="white-piece">&#9817</span></div>
+            <div id="cell-black-2B" class="col-md-1 cell"><span id="p-white-pawn-2" class="white-piece">&#9817</span></div>
+            <div id="cell-white-2C" class="col-md-1 cell"><span id="p-white-pawn-3" class="white-piece">&#9817</span></div>
+            <div id="cell-black-2D" class="col-md-1 cell"><span id="p-white-pawn-4" class="white-piece">&#9817</span></div>
+            <div id="cell-white-2E" class="col-md-1 cell"><span id="p-white-pawn-5" class="white-piece">&#9817</span></div>
+            <div id="cell-black-2F" class="col-md-1 cell"><span id="p-white-pawn-6" class="white-piece">&#9817</span></div>
+            <div id="cell-white-2G" class="col-md-1 cell"><span id="p-white-pawn-7" class="white-piece">&#9817</span></div>
+            <div id="cell-black-2H" class="col-md-1 cell"><span id="p-white-pawn-8" class="white-piece">&#9817</span></div>
+        </div>
+        <div id="row-1" class="row">
+            <div id="cell-black-1A" class="col-md-1 cell"><span id="p-white-castle-1" class="white-piece">&#9814</span></div>
+            <div id="cell-white-1B" class="col-md-1 cell"><span id="p-white-knight-1" class="white-piece">&#9816</span></div>
+            <div id="cell-black-1C" class="col-md-1 cell"><span id="p-white-bishop-1" class="white-piece">&#9815</span></div>
+            <div id="cell-white-1D" class="col-md-1 cell"><span id="p-white-queen" class="white-piece">&#9813</span></div>
+            <div id="cell-black-1E" class="col-md-1 cell"><span id="p-white-king" class="white-piece">&#9812</span></div>
+            <div id="cell-white-1F" class="col-md-1 cell"><span id="p-white-bishop-2" class="white-piece">&#9815</span></div>
+            <div id="cell-black-1G" class="col-md-1 cell"><span id="p-white-knight-2" class="white-piece">&#9816</span></div>
+            <div id="cell-white-1H" class="col-md-1 cell"><span id="p-white-castle-2" class="white-piece">&#9814</span></div>
+        </div>
+    </div>
+    <!-- Notification Modal -->
+<div id="gameEndNotification" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Game Over</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>The game has ended. Do you want to start a new game?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="startNewGameBtn">Start New Game</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Notification Banner for Game End -->
+<div id="gameEndNotification" class="alert alert-success alert-dismissible fade show" role="alert" style="display: none;">
+    <strong>Game Over!</strong> The king has been killed. Do you want to start a new game?
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <button type="button" class="btn btn-primary" id="startNewGameBtn">Start New Game</button>
+  </div>
+  
+   
+    <script type="text/javascript" rel="script" src="_js/script.js"></script>
+    <script>
+        // Check if user is logged in (you can store login status in sessionStorage or cookies)
+        const userLoggedIn = sessionStorage.getItem('userLoggedIn');
+        let tLevel = sessionStorage.getItem('tLevel') || 0; // Get saved T Level or default to 0
+
+        // Display the current T Level
+        document.getElementById('counter').textContent = `T Level: ${tLevel}`;
+
+        // If user is logged in, increment the T Level by 1
+        if (userLoggedIn) {
+            tLevel++;
+            sessionStorage.setItem('tLevel', tLevel); // Update the T Level
+        }
+
+        // Example function for login
+        function login(username, password) {
+            // Perform validation and login logic here
+            sessionStorage.setItem('userLoggedIn', true); // Set login status
+            sessionStorage.setItem('tLevel', tLevel); // Save the T Level
+
+            // Update T Level UI
+            document.getElementById('counter').textContent = `T Level: ${tLevel}`;
+        }
+    </script>
+
+</body>
+</html>
